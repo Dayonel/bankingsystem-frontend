@@ -35,7 +35,7 @@ export class ClientLoginComponent {
         }
       },
       error => {
-        this.toastService.show(error.error);
+        this.toastService.show(error.message);
         this.isLoading = false;
       },
       () => this.isLoading = false);
