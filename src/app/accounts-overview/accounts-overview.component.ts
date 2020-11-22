@@ -65,7 +65,7 @@ export class AccountsOverviewComponent implements OnInit {
   }
 
   deposit(accountId: number): void {
-    this.accountService.deposit(accountId, this.accountForm.value.depositAmount).subscribe(
+    this.accountService.deposit(accountId, +this.accountForm.value.depositAmount).subscribe(
       res => {
         if (res) {
           this.toastService.show('Successfully deposited!');
@@ -79,7 +79,7 @@ export class AccountsOverviewComponent implements OnInit {
   }
 
   withdraw(accountId: number): void {
-    this.accountService.withdraw(accountId, this.accountForm.value.withdrawAmount).subscribe(
+    this.accountService.withdraw(accountId, +this.accountForm.value.withdrawAmount).subscribe(
       res => {
         if (res) {
           this.toastService.show('Successfully withdrawed!');
