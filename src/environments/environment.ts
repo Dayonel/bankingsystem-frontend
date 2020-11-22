@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:80'
+  baseUrl: 'https://bankingsystem-backend.herokuapp.com'
 };
 
 /*
