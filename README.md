@@ -1,27 +1,33 @@
-# BankingsystemFrontend
+# BankingSystem
+BankingSystem live version can be found here:
+[https://bankingsystem-frontend.herokuapp.com/](https://bankingsystem-frontend.herokuapp.com/)
+![live version](https://i.imgur.com/wmtUKjx.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+### Steps to execute project locally
 
-## Development server
+#### 1. Download and install NodeJS 12.18.3 LTS
+https://nodejs.org/dist/v12.18.3/node-v12.18.3-x64.msi
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute the following command in a console:
 
-## Code scaffolding
+    npm i -g @angular/cli
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### 2. Run the project
+Navigate to the project root, for example:
+![project root](https://i.imgur.com/vG7zL95.png)
 
-## Build
+> C:\git\bankingsystem-frontend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Open a console in project root and execute:
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    npm i
 
-## Running end-to-end tests
+    ng serve
+![ng serve](https://imgur.com/FWWutY7.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### 3. Localhost
+Navigate to:
+[http://localhost:4200/](http://localhost:4200/)
+You can test customers with Id(s) 1 to 5.
+![bank accounts customer 2](https://i.imgur.com/xNalEYm.png)

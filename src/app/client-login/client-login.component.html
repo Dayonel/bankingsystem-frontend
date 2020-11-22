@@ -1,0 +1,17 @@
+<h1>Client login</h1>
+<div class="card">
+    <form [formGroup]="clientForm" (keydown.enter)="formSubmit()">
+        <div class="card-body">
+            <h5 class="card-title title-label">Please login with your client id.</h5>
+            <div class="form-group">
+                <label for="id">Client id</label>
+                <input type="text" class="form-control" placeholder="1, 2, 3..." id="id" formControlName="id" />
+            </div>
+            <div class="flex-r">
+                <button type="button" class="btn btn-primary" (click)="formSubmit()">
+                    <app-spinner *ngIf="isLoading"></app-spinner> Submit
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+<h1>Welcome! {{ clientName }}</h1>
+<form [formGroup]="accountForm">
+    <div class="card mt-2" *ngFor="let account of accounts">
+        <div class="card-body">
+            <h5 class="card-title title-label">{{ account.accountType }}</h5>
+            <p>Balance: {{ account.balance }}</p>
+            <h5 class="title-label">Deposit</h5>
+            <div class="flx">
+                <input type="text" class="form-control" placeholder="10..." formControlName="depositAmount" />
+                <button type="button" class="btn btn-primary ml-1" (click)="deposit(account.id)">Submit</button>
+            </div>
+            <h5 class="title-label">Withdraw</h5>
+            <div class="flx">
+                <input type="text" class="form-control" placeholder="10..." formControlName="withdrawAmount" />
+                <button type="button" class="btn btn-primary ml-1" (click)="withdraw(account.id)">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
