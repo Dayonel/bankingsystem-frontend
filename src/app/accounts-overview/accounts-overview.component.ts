@@ -48,7 +48,7 @@ export class AccountsOverviewComponent implements OnInit {
         }
       },
       error => {
-        this.toastService.show(error.error);
+        this.toastService.show(error.message);
       });
   }
 
@@ -60,12 +60,12 @@ export class AccountsOverviewComponent implements OnInit {
         }
       },
       error => {
-        this.toastService.show(error.error);
+        this.toastService.show(error.message);
       });
   }
 
   deposit(accountId: number): void {
-    this.accountService.deposit(accountId, this.accountForm.value.depositAmount).subscribe(
+    this.accountService.deposit(accountId, +this.accountForm.value.depositAmount).subscribe(
       res => {
         if (res) {
           this.toastService.show('Successfully deposited!');
@@ -74,12 +74,12 @@ export class AccountsOverviewComponent implements OnInit {
         }
       },
       error => {
-        this.toastService.show(error.error);
+        this.toastService.show(error.message);
       });
   }
 
   withdraw(accountId: number): void {
-    this.accountService.withdraw(accountId, this.accountForm.value.withdrawAmount).subscribe(
+    this.accountService.withdraw(accountId, +this.accountForm.value.withdrawAmount).subscribe(
       res => {
         if (res) {
           this.toastService.show('Successfully withdrawed!');
