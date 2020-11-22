@@ -1,0 +1,16 @@
+.flex-r {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-label {
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 100;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
